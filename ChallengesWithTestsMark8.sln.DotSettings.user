@@ -1,0 +1,23 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1d76ff87_002De6f1_002D4204_002Dbf44_002D361fe84ffd3f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetGreeting" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::.NETCoreApp,Version=v2.1::ChallengesWithTestsMark8.Tests.ChallengesSet01Tests.GetGreeting&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5a47a3d3_002D671d_002D4e67_002Db418_002Deca27455e6ef/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetHey" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::.NETCoreApp,Version=v2.1::ChallengesWithTestsMark8.Tests.ChallengesSet01Tests.GetHey&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eef23538_002Dca83_002D43a2_002D9b77_002D6d06552ab806/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetGreeting #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::5F6EDB8F-2166-447C-BACA-784679AC4459::.NETCoreApp,Version=v2.1::ChallengesWithTestsMark8.Tests.ChallengesSet01Tests.GetGreeting&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	
+	</wpf:ResourceDictionary>
