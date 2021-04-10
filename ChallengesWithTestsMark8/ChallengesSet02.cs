@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace ChallengesWithTestsMark8
 {
@@ -7,52 +9,53 @@ namespace ChallengesWithTestsMark8
     {
         public bool CharacterIsALetter(char c)
         {
-            throw new NotImplementedException();
+            return char.IsLetter(c);
         }
 
         public bool CountOfElementsIsEven(string[] vals)
         {
-            throw new NotImplementedException();
+            return vals.Count() % 2 == 0;
         }
 
         public bool IsNumberEven(int number)
         {
-            throw new NotImplementedException();
+            return number % 2 == 0;
         }
 
         public bool IsNumberOdd(int num)
         {
-            throw new NotImplementedException();
+            return num % 2 != 0;
         }
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            throw new NotImplementedException();
+            return numbers == null || numbers.Count() < 1 ? 0 : numbers.Max() + numbers.Min();
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
         {
-            throw new NotImplementedException();
+            var list = new List<int>() { str1.Length, str2.Length };
+            return list.Min();
         }
 
         public int Sum(int[] numbers)
         {
-            throw new NotImplementedException();
+            return numbers == null ? 0 : numbers.Sum();
         }
 
         public int SumEvens(int[] numbers)
         {
-            throw new NotImplementedException();
+           return numbers == null ? 0 : numbers.Where(x=> x % 2 == 0).Sum();
         }
 
         public bool IsSumOdd(List<int> numbers)
         {
-            throw new NotImplementedException();
+            return numbers != null && numbers.Where(x => x % 2 == 0).Sum() % 2 != 0;
         }
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            throw new NotImplementedException();
+            return number <= 0 ? 0 : number / 2;
         }
     }
 }

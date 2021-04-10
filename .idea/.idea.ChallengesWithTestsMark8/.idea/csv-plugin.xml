@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/ChallengesWithTestsMark8/ChallengesSet02.cs">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace ChallengesWithTestsMark8
 {
@@ -10,14 +11,17 @@ namespace ChallengesWithTestsMark8
 
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            if(num1 == num2)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            
+            return num1 == num2 ? true : true;
+            
+           // if(num1 == num2)
+           // {
+             //   return true;
+           // }
+           // else
+            //{
+            //    return false;
+           // }
         }
 
         public double Subtract(double minuend, double subtrahend)

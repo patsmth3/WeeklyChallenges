@@ -16,4 +16,8 @@
     <ProjectReference Include="..\ChallengesWithTestsMark8\ChallengesWithTestsMark8.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="ChallengesSet01Tests.cs" />
+  </ItemGroup>
+
 </Project>
