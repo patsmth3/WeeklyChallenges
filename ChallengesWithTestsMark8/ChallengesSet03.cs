@@ -9,64 +9,23 @@ namespace ChallengesWithTestsMark8
     {
         public bool ArrayContainsAFalse(bool[] vals)
         {
-            for (int i = 0; i < vals.Length; i++)
-            {
-                if(vals[i] == false)
-                {
-                    return true;
-                }
-            }
-
-            return false;
+          return vals.Contains(false);
+          
         }
 
          public bool IsSumOfOddsOdd(IEnumerable<int> numbers)
         {
-            if(numbers == null || numbers.Count() == 0)
-            {
-                return false;
-            }
-
-            var sum = numbers.Sum();
-          
-            return (sum % 2 != 0);
+            return numbers != null && numbers.Where(x => x % 2 != 0).Sum() % 2 != 0;
         }
 
-        public bool PasswordContainsUpperLowerAndNumber(string password)
-        {
-            var isLower = false;
-            var isUpper = false;
-            var isNumber = false;
+         public bool PasswordContainsUpperLowerAndNumber(string password)
+         {
+             return password.Any(char.IsUpper) &&
+                    password.Any(char.IsLower) &&
+                    password.Any(char.IsDigit);
+         }
 
-            for (int i = 0; i < password.Length; i++)
-            {
-                if (char.IsLower(password[i]))
-                {
-                    isLower = true;
-                }
-
-                if (char.IsUpper(password[i]))
-                {
-                    isUpper = true;
-                }
-
-                if (char.IsNumber(password[i]))
-                {
-                    isNumber = true;
-                }
-            }
-
-            if(isLower == true && isUpper == true && isNumber == true)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            } 
-        }
-
-        public char GetFirstLetterOfString(string val)
+         public char GetFirstLetterOfString(string val)
         {
             return val.First();
         }
@@ -74,18 +33,11 @@ namespace ChallengesWithTestsMark8
         public char GetLastLetterOfString(string val)
         {
             return val[val.Length - 1];
-            
         }
 
         public decimal Divide(decimal dividend, decimal divisor)
         {
-            if(divisor == 0)
-            {
-                return 0;
-            }
-
-            return dividend / divisor;
-
+            return divisor == 0 ? 0 : dividend / divisor;
         }
 
         public int LastMinusFirst(int[] nums)
@@ -114,43 +66,6 @@ namespace ChallengesWithTestsMark8
             {
                 words[i] = words[i].ToUpper();
             }
-                       
         }
-
-        public char FindMissingLetter(char[] array)
-        {
-            char[] letters = "abcdefghijklmnopqrxtuvwxyz".ToCharArray();
-
-            if (char.IsUpper(array[0]))
-            {
-                letters = "abcdefghijklmnopqrxtuvwxyz".ToUpper().ToCharArray();
-            }
-            
-            var place = 0;
-
-
-            for (int j = 0; j < letters.Length; j++)
-            {
-                if (array[0] == letters[j])
-                {
-                    place = j;
-                    break;
-                }
-            }
-
-            char missing = ' ';
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] != letters[place])
-                {
-                    missing = letters[place];
-                    break;
-                }
-                place++;
-            }
-
-            return missing;
-        }
-    }
+    } 
 }
